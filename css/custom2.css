@@ -1,0 +1,91 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    min-height: auto;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height:100vh
+}
+
+
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 170px 15px 70px;
+    text-align: center;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(70,90,105,.5);
+}
+
+header .header-content .header-content-inner h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgba(0,0,0,.5);
+}
+
+.job-image {
+    width: 100px;
+}
+
+.job-company{
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgba(0,0,100);
+}
+.job-title{
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(100,100,100);
+}
+.job-location{
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0);
+}
+
+th, td {
+    padding: 30px;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #236;
+}
+
+/* mouse over link */
+a:hover {
+    color: #469;
+}
+
+.contact-block{
+    height:75px;
+    margin:10px;
+}
