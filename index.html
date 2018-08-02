@@ -21,7 +21,9 @@
 	<link href="css/custom.css" rel="stylesheet">
     <!-- Custom Fonts from Google -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    
+    <script>
+        var selected_project;
+    </script>
 </head>
 
 <body>
@@ -32,14 +34,14 @@
           $("#nav").load("nav.html"); 
         });
     </script--> 
-	
     <!-- Header -->
     <header style="background-image:url(images/ireland.jpg)">
         <div class="header-content">
             <div class="header-content-inner">
                 <h2><i>Hello, I'm</i></h2>
                 <h1>Whitney Mulhern</h1>
-                <p>Sometimes I'm a mess<br>but mostly I know<br>what I'm doing</p>
+                <!--p>Sometimes I'm a mess<br>but mostly I know<br>what I'm doing</p-->
+                <p>Welcome to my<br>interactive resume</p>
             </div>  
         </div>
     </header>
@@ -100,7 +102,7 @@
 
     <header style="background-image:url(images/nyc-me.jpg);height:60%">
         <div class="header-content">
-        <div class="header-content-inner" >
+        <div class="header-content-inner">
             <h1 style="font-size:48px">Awards and Publications</h1>
         </div>  
     </div>
@@ -125,7 +127,7 @@
     <header style="background-image:url(images/NYC.jpg);height:60%">
         <div class="header-content">
         <div class="header-content-inner" >
-            <h1 style="font-size:48px">Skills and Projects</h1>
+            <h1 style="font-size:48px">Projects and Skills</h1>
         </div>  
     </div>
     </header>
@@ -134,8 +136,74 @@
         <br>
         <p>404 Could not find projects at this time</p>
     </div>
+    <div name="projects" style="display:none;text-align:center;background-color:#89b;">
+        <div name="grey" style="padding-top:5%;padding-bottom:10%">
+        <h2>Relevant Projects and Classes</h2>
+        <ul>
+            <li><div class="circle">
+                <div class="front">
+                    <div class="element"><p>Undergrad Research Thesis</p></div>
+                </div>
+                <div class="back">
+                    <div class="element"><p>Stack smashing!!!</p></div>
+                </div>
+            </div></li><li><div class="circle">
+                <div class="front">
+                    <div class="element"><p>IOT Security Review</p></div>
+                </div>
+                <div class="back">
+                    <div class="element"><p>Alexa is alive</p></div>
+                </div>
+            </div></li>
+            <li><div class="circle">
+                <div class="front">
+                    <div class="element"><p>T H E A</p></div>
+                </div>
+                <div class="back">
+                    <div class="element"><p>THEA is supa kool.</p></div>
+                </div>
+            </div></li>
+            <li><div class="circle">
+                <div class="front">
+                    <div class="element"><p>Advanced Computer Systems</p></div>
+                </div>
+                <div class="back">
+                    <div class="element"><p>Ohhhh boy...</p></div>
+                </div>
+            </div></li>
+            <li><div class="circle">
+                <div class="front">
+                    <div class="element"><p>Heuristic Problem Solving</p></div>
+                </div>
+                <div class="back">
+                    <div class="element"><p>No Escape</p></div>
+                </div>
+            </div></li>
+            <li><div class="circle">
+                <div class="front">
+                    <div class="element"><p>Artificial Intelligence</p></div>
+                </div>
+                <div class="back">
+                    <div class="element"><p>CLYDE</p></div>
+                </div>
+            </div></li>
+            <li><div class="circle">
+                <div class="front">
+                    <div class="element"><p>Network Security</p></div>
+                </div>
+                <div class="back">
+                    <div class="element"><p>Hacking</p></div>
+                </div>
+            </div></li>
+            <!--li><div class="outerCircle">
+                <div class="innerCircle"><div class="element">Operating Systems</div></div>
+            </div></li-->
+
+            
+        </ul>
+    </div></div>
         <div name="skills" style="text-align:center;background-color:#eee;padding-top:5%;padding-bottom:10%">
-        <h2>Here are some of my skills</h2>
+        <h2>Skills</h2>
         <br>
         <div style="font-family:Lucida Console;text-align:left;overflow:auto;margin:0% 20% ">
             <!-- TODO: fix skills centering -->
@@ -162,12 +230,31 @@
             </table></div>
             <div name="right-column" style=";width:45%;float:right">
                 <table>
+                    <tr><td>>_ filling in stars</td>
+                        <td>★ ★ ★ ★ ★<font color="grey"></font></td>
                     <tr><td>>_ data structures</td><td>★ ★ ★ ★ ★<font color="grey"></font></td>
                     <tr><td>>_ algorithms</td><td>★ ★ ★ ★ ★<font color="grey"></font></td>
                     <tr><td>>_ SQL</td><td>★ ★ ★<font color="grey"> ★ ★ </font></td>
                     <tr><td>>_ cryptography</td><td>★ ★ ★<font color="grey"> ★ ★ </font></td>
             </table></div>
         </div>
+    </div>
+    <div name="fun-facts" style="background-color:#000;height:650px">
+        <img src="images/lights.jpg" style="float:right;max-height:100%;max-width:38%">
+        <div class="fun-facts" name="facts" style="text-align:left;margin-left:10%;padding-top:3%;padding-bottom:10%">
+            <h3 style="color:#89b;text-align:center;padding-bottom:15px">Fun Facts</h3  >
+            <p>I grew up right outside of Boston.</p>
+            <p>I now live in New York City.</p>
+            <p>I've been <a href="https://www.youtube.com/watch?v=FIsTy9N_Utg" target="_blank" style="color:#89b">dancing</a> since I was 3 years old. And still do.</p>
+            <p>And was one of American Dance Awards' top 100 Dancers of the Year in 2012.</p>
+            <p>I lit the <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=07%2F05%2F2015" target="_blank" style="color:#89b">Empire State Building</a> on July 5th, 2015.</p>
+            <p>And then again for my <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=05%2F16%2F2017" target="_blank" style="color:#89b">graduation from NYU</a>.</p>
+            <p>My favorite drink is milk, but I hate cheese (I know, I know).</p>
+            <p>I have the <a href="https://www.instagram.com/teddybearthecavachon/" target="_blank" style="color:#89b">cutest dog in the world</a> named Teddy (unbiased opinion).</p>
+            <p>I love cooking but I'm not very good at it.</p>
+            
+        </div>
+        
     </div>
     <div name="contact" style="text-align:center;background-color:#fff;padding-top:5%;padding-bottom:10%">
         <p style="font-size:40px;font-weight:50">Contact Me</p>
@@ -186,19 +273,67 @@
 
 
 
+    <script type="text/javascript">
+        alert("Hello! If you are a potential employer, welcome! But also note that this site is in beta. In particular I haven't put together my more professional pictures so I have used slightly silly ones for now. Enjoy!");
+        /*
+        $( "li" ).click(function() {
+            $circle = $(this).children()[0];
+            $front = $($circle).children()[0];
+            $back = $($circle).children()[1];
 
+            var window_height = $(window).height();
+            var window_width = $(window).width();
+            var big_radius = window_height-100;
+            var small_radius = 160;
+            
+            var position = $(this).position();
+            var circle_top = position.top;
+            var circle_left = position.left
+            
+            
+            console.log("window width", window_width);
+            console.log("window height", window_height);
+            console.log("circle top", circle_top);
+            console.log("circle left", circle_left);
+            
 
-    <!-- jQuery -->
+            move_left = ((window_width/2) - (window_height/2)) - circle_left;
+            move_top =  ((window_height/2) - (big_radius/2)) - circle_top;
+            //console.log("Left\n\tAt:", circle_left, "\tMoving to:", (window_width/2) - (window_height/2), "\n\tWill move:", move_left);
+            //console.log("Top\n\tAt:", circle_top, "\tMoving to: 3500\n\tWill move:", circle_top - 3500);
+            
+            $( $front ).animate({
+                width: big_radius,
+                height: big_radius,
+                left: 3800 - circle_top,
+                top: move_left
+                
+            });
+            $( $back ).animate({
+                width: big_radius,
+                height: big_radius,
+                left: 3800 - circle_top,
+                top: move_left
+                //1280x440
+            });
+            $($circle).css('transform', 'rotate3d(45, 45, 0, 180deg)');
+            var new_position = $($circle).position();
+            selected_project = this;
+        });
+        */
+    </script>
+
+    <!-- jQuery >
     <script src="js/jquery-1.11.3.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript>
-    <script src="js/bootstrap.min.js"></script-->
+    <! Bootstrap Core JavaScript>
+    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
+    <! Plugin JavaScript >
     <script src="js/jquery.easing.min.js"></script>
     
-    <!-- Custom Javascript -->
-    <script src="js/custom.js"></script>
+    <! Custom Javascript >
+    <script src="js/custom.js"></script-->
 
 </body>
 

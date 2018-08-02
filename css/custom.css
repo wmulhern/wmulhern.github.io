@@ -94,3 +94,173 @@ a:hover {
     height:75px;
     margin:10px;
 }
+
+.fun-facts p {
+    padding-bottom:2%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #eee;
+}
+
+
+
+
+
+li, .front, .back{
+    width: 160px;
+    height: 160px;
+    background-color: rgba(0,0,0,0);
+}
+
+
+.circle{
+    
+    position: relative;
+    width: 160px;
+    height: 160px;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+li .outerCircle { 
+    display: table;
+    height: 160px;
+    width: 160px;
+    background-color: rgba(22,22,22,1);
+    border-radius: 50%;
+    transition: transform 0.3s; 
+}
+
+
+
+.front, .back {
+    display: table;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    backface-visibility: hidden;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
+    text-align: center
+}
+.element{
+    display: table-cell;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotate3d(45,45,0,180deg);
+}
+
+
+ul{
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 50px;
+    display: inline-block;
+    position: relative;
+    perspective: 1000;
+}
+
+.element, .p {
+    
+    vertical-align: middle; 
+    text-align: center;
+    color: #eee;
+}
+
+.circle:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+.overlay {
+    z-index: 5;
+    background: #888;
+    display: none;
+    /*position: absolute;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+/*
+.circle-container, .front, .back {
+    width: 175px;
+    height: 175px;
+    background-color: rgba(0,0,0,0);
+}
+
+
+
+li .outerCircle { 
+    display: table;
+    height: 160px;
+    width: 160px;
+    background-color: rgba(22,22,22,1);
+    border-radius: 50%;
+    transition: transform 0.3s; 
+
+}
+
+li .innerCircle { 
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    background-color: #222222;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+.outerCircle:hover {
+    -ms-transform: scale(1.2); /* IE 9 
+    -webkit-transform: scale(1.2); /* Safari 3-8 
+    transform: scale(1.2); 
+}
+
+
+
+.outerCircle{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    border-radius: 50%
+    position: absolute;
+}
+
+.outerCircle, .innerCircle, .element {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+
+.outerCircle .front, .outerCircle .back {
+    backface-visibility: hidden;
+}
+
+.element {
+    backface-visibility: hidden;
+}
+
+.outerCircle .front {
+    z-index: 2;
+}
+
+.element, .back{
+    transform: rotate3d(45,45,0,180deg);
+}
+*/
