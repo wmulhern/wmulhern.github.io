@@ -6,9 +6,39 @@ body {
     font-family: 'Martel';
 }
 
+* {
+    box-sizing:border-box;
+}
+
+.left {
+    padding:1%;
+    float:left;
+    width:10%; /* The width is 20%, by default */
+}
+.right {
+    padding:1%;
+    float:left;
+    width:10%; /* The width is 20%, by default */
+}
+.resume{
+    padding:2%;
+    float:left;
+    width:80%;
+    font-family: Arial;
+}
+@media screen and (max-width:800px) {
+    .resume{
+        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .left, .right{
+      display:none;
+    }
+}
+
 /* HEADER */
 
 .header-background {
+    clear:both;
     position: relative;
     text-align: center;
     color: #fff;
@@ -33,20 +63,20 @@ body {
     height:50%
 }
 .sub-header h1 {
-    font-size: 4vw;
+    font-size: 4vmax;
 }
 
 .main-header h1 {
-    font-size: 5vw;
+    font-size: 5vmax;
     font-weight: 300;
 }
 .main-header p {
-    font-size: 1.5vw;
+    font-size: 1.5max;
     font-weight: 300;
     color: rgba(70,90,105,.5);
 }
 .main-header h2 {
-    font-size: 3vw;
+    font-size: 3max;
     font-weight: 400;
     color: rgba(0,0,0,.5);
 }
@@ -60,26 +90,32 @@ body {
 .job-company{
     font-family: 'Martel';
     margin-bottom: 0px;
-    font-size: 4vh;
+    font-size: 2vmax;
     font-weight: 400;
     color: #236;
     text-decoration: underline;
 }
 .job-location{
     margin-bottom: 0px;
-    font-size: 3vh;
+    font-size: 1.5vmax;
     font-weight: 400;
     color: rgba(100,100,100);
 }
 .job-title{
     margin-bottom: 0px;
-    font-size: 3vh;
+    font-size: 1.5vmax;
     font-weight: 600;
+    color: rgba(0,0,0);
+}
+.job-description{
+    margin-bottom: 0px;
+    font-size: 1.2vmax;
     color: rgba(0,0,0);
 }
 
 .jobs th, .jobs td {
     padding: 30px;
+    min-width: 25%;
 }
 th, td {
     padding: 5px;
@@ -89,7 +125,7 @@ th, td {
 .degree{
     font-family: 'Martel';
     margin-bottom: 0px;
-    font-size: 4vh;
+    font-size: 2vmax;
     font-weight: 400;
 }
 
