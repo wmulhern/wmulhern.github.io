@@ -2,11 +2,7 @@
     TODOS:
         - Download PDF resume
         - Add Projects
-        - Fix PCK bullets
-        - Format job bullets
-        - Generalize Layout
         - PICTURES
-        - Mouse over companies for info
 -->
 
 <html lang="en">
@@ -28,7 +24,21 @@
     <!-- Bootstrap Core CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!--link href="css/fluid.css" rel="stylesheet"-->
 	<link href="css/custom.css" rel="stylesheet">
+    <style class="cp-pen-styles">
+        @media screen and (min-width: 20rem) {
+          html {
+            font-size: calc(0.8rem + 1.2 * ((100vw - 20rem) / 30));
+          }
+        }
+        @media screen and (min-width: 50rem) {
+          html {
+            font-size: 2rem;
+          }
+      }
+    </style>
+    
 
 </head>
 
@@ -42,7 +52,7 @@
     </script--> 
    
     <!-- HEADER -->
-    <div class="header-background main-header" style="background-image:url(images/ireland.jpg)">
+    <div class="header-background main-header" style="background-position: center right;background-image:url(images/ireland.jpg)">
         <div class="header-content">
             <h2><i>Hello! I'm</i></h2>
             <h1>Whitney Mulhern</h1>
@@ -52,88 +62,85 @@
 
     <!-- EXPERIENCE -->
     <div style="overflow:auto;text-align:center;background-color:#eee;padding:3% 0px">
-        <div class="left"></div>
         <div class="resume">
-            <!--h2>What I've Done...</h2>
-            <hr class="fancy"-->
-            <table class="jobs" style="width:100%">
-                <tr>
-                    <td><img class="job-image" alt="IBM" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2000px-IBM_logo.svg.png"></td>
-                    <td>
-                        <p class="job-company">IBM</p>
-                        <p class="job-location">New York, NY</p>
-                        <p class="job-title">Software Engineer</p> 
-                        <p class="job-description">• Develop front end of an internal onboarding tool with small team of three using ReactJS</p>
-                    </td>
-                </tr><tr>
-                    <td><img class="job-image" alt="IBM" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2000px-IBM_logo.svg.png"></td>
-                    <td>
-                        <p class="job-company">IBM</p>
-                        <p class="job-location">New York, NY</p>
-                        <p class="job-title">Security Engineer</p> 
-                        <p class="job-description">• Minimize Cloud Platform vulnerabilities by reviewing 50+ teams' code and offering creative solutions</p>
-                        <p class="job-description">• Correct 100s of database errors per day with a JavaScript agent (~100 lines of code)</p>
-                        <p class="job-description">• Drove and ensured GDPR compliance ahead of schedule from 100+ IBM development teams</p>
-                        <p class="job-description">• Improved security awareness in my organization by curating a training course of security best practices</p>
-                    </td>
-                </tr><tr>
-                    <td><img class="job-image" alt="LGS" src="https://njbmagazine.com/wp-content/uploads/2017/10/LGS.gif"></td>
-                    <td>
-                        <p class="job-company">LGS Innovations</p>
-                        <p class="job-location">Florham Park, NJ</p>
-                        <p class="job-title">Cyber Security Research Intern</p>
-                        <p class="job-description">• Designed an Intrusion Detection tool for a commercial IOT device using machine learning, R, & python</p>
-                        <p class="job-description">• Debugged and improved usability of a 10,000+ line codebase</p>
-                    </td>
-                </tr><tr>
-                    <td><img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png"></td>
-                    <td>
-                        <p class="job-company">NYU Courant Institue of Mathematical Sciences</p>
-                        <p class="job-location">New York, NY</p>
-                        <p class="job-title">Research Assistant</p>
-                        <p class="job-description">• Proved compatibility by developing a secure JavaScript client which interacted with a C++ back end</p>
-                        <p class="job-description">• Co-wrote the research paper published in Networked Systems Design and Implementation 2016</p>
-                    </td>
-                </tr><tr>
-                    <td><img class="job-image" alt="PCK" src="https://toolinc.com/wp-content/uploads/2014/08/7-Color-Kinetics-Logo.png"></td>
-                    <td>
-                        <p class="job-company">Philips Color Kinetics</p>
-                        <p class="job-location">Burlington, MA</p>
-                        <p class="job-title">Applications Engineering Intern / Applications Engineer</p>
-                        <p class="job-description">• Designed, programmed, and tested a failsafe system for the Empire State Building light system</p>
-                        <p class="job-description">• Designed and implemented a database-backed web application with a team</p>
-                        <p class="job-description">• Maintained and managed remote monitoring systems, web forms, and web applications</td>
-                </tr>
-            </table>
-            <br><br>
-            <hr class="fancy">
-            <table style="width:60%;margin-left:auto;margin-right:auto;min-width:20%;overflow:scroll">
-                <tr>
-                    <td><img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png"></td>
-                    <td>
-                        <p class="degree">B.S. Computer Science</p>
-                        <p class="job-description">New York University</p>
-                    </td>
-                </tr><tr>
-                    <td><img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png"></td>
-                    <td>
-                        <p class="degree">B.S. Computer Engineering</p>
-                        <p class="job-description">New York University</p> 
-                    </td>
-                </tr>
-            </table>
+            <div class="job-img">
+                <img class="job-image" alt="IBM" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2000px-IBM_logo.svg.png">
+            </div>
+            <div class="job-text">
+                <p class="job-company">IBM</p>
+                <p class="job-location">New York, NY</p>
+                <p class="job-title">Software Engineer</p> 
+                <p class="job-description">• Develop front end of an internal onboarding tool with small team of three using ReactJS</p>
+            </div>
+            <div class="job-img">
+                <img class="job-image" alt="IBM" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2000px-IBM_logo.svg.png">
+            </div>
+            <div class="job-text">
+                <p class="job-company">IBM</p>
+                <p class="job-location">New York, NY</p>
+                <p class="job-title">Security Engineer</p> 
+                    <p class="job-description">• Minimize Cloud Platform vulnerabilities by reviewing 50+ teams' code and offering creative solutions</p>
+                    <p class="job-description">• Correct 100s of database errors per day with a JavaScript agent (~100 lines of code)</p>
+                    <p class="job-description">• Drove and ensured GDPR compliance ahead of schedule from 100+ IBM development teams</p>
+                    <p class="job-description">• Improved security awareness in my organization by curating a training course of security best practices</p>
+            </div>
+            <div class="job-img">
+                <img class="job-image" alt="LGS" src="https://njbmagazine.com/wp-content/uploads/2017/10/LGS.gif">
+            </div>
+            <div class="job-text"> 
+                <p class="job-company">LGS Innovations</p>
+                <p class="job-location">Florham Park, NJ</p>
+                <p class="job-title">Cyber Security Research Intern</p>
+                    <p class="job-description">• Designed an Intrusion Detection tool for a commercial IOT device using machine learning, R, & python</p>
+                    <p class="job-description">• Debugged and improved usability of a 10,000+ line codebase</p>
+            </div>
+            <div class="job-img">
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <p class="job-company">NYU Courant Institue of Mathematical Sciences</p>
+                <p class="job-location">New York, NY</p>
+                <p class="job-title">Research Assistant</p>
+                    <p class="job-description">• Proved compatibility by developing a secure JavaScript client which interacted with a C++ back end</p>
+                    <p class="job-description">• Co-wrote the research paper published in Networked Systems Design and Implementation 2016</p>
+            </div>
+            <div class="job-img">
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <p class="job-company">Philips Color Kinetics</p>
+                <p class="job-location">Burlington, MA</p>
+                <p class="job-title">Applications Engineering Intern / Applications Engineer</p>
+                    <p class="job-description">• Designed, programmed, and tested a failsafe system for the Empire State Building light system</p>
+                    <p class="job-description">• Designed and implemented a database-backed web application with a team</p>
+                    <p class="job-description">• Maintained and managed remote monitoring systems, web forms, and web applications</p>
+            </div>
         </div>
-        <div class="right"></div>
+        <hr class="fancy">
+        <div class="education">
+            <div class="job-img">
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <p class="degree">B.S. Computer Science</p>
+                <p class="job-description">New York University</p>
+            </div>
+            <div class="job-img">
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <p class="degree">B.S. Computer Engineering</p>
+                <p class="job-description">New York University</p> 
+            </div>
+        </div>
     </div>
 
     <!-- AWARDS AND PUBLICATIONS HEADER -->
-    <Grid>
-        <div class="header-background sub-header" style="background-image:url(images/nyc-me.jpg)">
-            <div class="header-content">
-                <h1>Awards and Publications</h1>
-            </div>
+    <div class="header-background sub-header" style="background-image:url(images/nyc-me.jpg)">
+        <div class="header-content">
+            <h1>Awards and Publications</h1>
         </div>
-    </Grid>
+    </div>
 
     <!-- AWARDS AND PUBLICATIONS -->
     <div name="awards" style="text-align:center;background-color:#eee;padding-top:10%;padding-bottom:10%;font-family:Arial">
@@ -141,13 +148,13 @@
            <a target="_blank" href="https://www.influenster.com/article/codelikeagirl-scholarship-winner-whitney-mulhern">
             <h1 style="font-family:Martel">#CodeLikeAGirl Scholarship Winner 2015</h1>
         </a>
-        <img src="images/influenster.jpg" style="margin-bottom:2%;margin-top:2%">
+        <img src="images/influenster.jpg" style="max-width:75%;margin-bottom:2%;margin-top:2%">
         <p>Say hello, to one of the amazing winners of our #CodeLikeAGirl Scholarship! Whitney is in her fourth year of a 5-year program studying Computer Science and Computer Engineering at NYU. Outside of school, she is an active member of NYU's chapter of the Association for Computing Machinery but also loves to dance and perform in musicals. This engineering and computer science superstar isn't taking things as they're given, but rather has her eyes set on improving the way everyone interacts with technology!<a target="_blank" href="https://www.influenster.com/article/codelikeagirl-scholarship-winner-whitney-mulhern"> Read more...</a></p>
-        <br><br><br><br>
+        <br><br><br>
         <a target="_blank" href="https://eprint.iacr.org/2015/489.pdf">
             <h1 style="font-family:Martel">Publication: NSDI'16 Conference</h1>
         </a>
-        <img src="https://www.usenix.org/sites/default/files/nsdi16_button_180.png" style="margin-bottom:5%;margin-top:2%">
+        <img src="https://www.usenix.org/sites/default/files/nsdi16_button_180.png" style="max-width:40%;margin-bottom:5%;margin-top:2%">
         <p class='job-title'>Scalable and private media consumption with Popcorn</p>
         <p>T. Gupta N. Crooks <strong>W. Mulhern</strong> S. Setty L. Alvisi M. Walfish
         <p>Abstract. <i>We describe the design, implementation, and evaluation of Popcorn, a media delivery system that hides clients’ consumption (even from the content distributor). Popcorn relies on a powerful cryptographic primitive: private information retrieval (PIR). With novel refinements that leverage the properties of PIR protocols and media streaming, Popcorn scales to the size of Netflix’s library (8000 movies) and respects current controls on media dissemination. The dollar cost to serve a media object in Popcorn is 3.87× that of a non-private system.</i><a target="_blank" href="https://eprint.iacr.org/2015/489.pdf"> Read more...</a></p>
@@ -162,37 +169,54 @@
     </div>
 
     <!-- SKILLS -->
-    <div name="skills" style="text-align:center;background-color:#eee;padding-top:5%;padding-bottom:10%">
+    <div name="skills" style="text-align:center;background-color:#eee;padding-top:5%;padding-bottom:8%">
         <h2>Skills</h2>
         <br>
-        <div style="font-family:Lucida Console;text-align:left;overflow:auto;margin:0% 20% ">
-            <!-- TODO: fix skills centering -->
-            <div name="left-column" style="width:45%;float:left">
-                <table>
-                    <tr><td>>_ python</td>
-                        <td>★ ★ ★ ★ ★<font color="grey"></font></td></tr>
-                    <tr><td>>_ c</td>
-                        <td>★ ★ ★ ★<font color="grey"> ★</font></td></tr>
-                    <tr><td>>_ javascript</td>
-                        <td>★ ★ ★ ★<font color="grey"> ★ </font></td></tr>
-                    <tr><td>>_ java</td>
-                        <td>★ ★ ★<font color="grey"> <font color="grey">★ ★</font></td></tr>
-                    <tr><td>>_ c++</td>
-                        <td>★ ★ ★<font color="grey"> ★ ★</font></td></tr>
-            </table></div>
-            <div name="right-column" style=";width:45%;float:right">
-                <table>
-                    <tr><td>>_ data structures</td><td>★ ★ ★ ★ ★<font color="grey"></font></td></tr>
-                    <tr><td>>_ algorithms</td><td>★ ★ ★ ★ ★<font color="grey"></font></td></tr>
-                    <tr><td>>_ SQL</td><td>★ ★ ★<font color="grey"> ★ ★ </font></td></tr>
-                    <tr><td>>_ cryptography</td><td>★ ★ ★<font color="grey"> ★ ★ </font></td></tr>
-            </table></div>
+        <div class="skills"</div>
+            <div class="skill-name">>_ c++</div>
+            <div class="skill-stars">★ ★ ★ ★ ★</div>
+            <div class="skill-name">>_ data structures</div>
+            <div class="skill-stars">★ ★ ★ ★ ★</div>
+            <div class="skill-name">>_ python</div>
+            <div class="skill-stars">★ ★ ★ ★ ★</div>
+            <div class="skill-name">>_ algorithms</div>
+            <div class="skill-stars">★ ★ ★ ★ ★</div>
+            <div class="skill-name">>_ c</div>
+            <div class="skill-stars">★ ★ ★ ★<font color="grey"> ★</font></div>
+            <div class="skill-name">>_ javascript</div>
+            <div class="skill-stars">★ ★ ★ ★<font color="grey"> ★</font></div>
+            <div class="skill-name">>_ java</div>
+            <div class="skill-stars">★ ★ ★<font color="grey"> ★ ★</font></div>
+            <div class="skill-name">>_ SQL</div>
+            <div class="skill-stars">★ ★ ★<font color="grey"> ★ ★</font></div>
         </div>
     </div>
 
     <!-- FUN FACTS -->
-    <div name="fun-facts" style="background-color:#000;height:650px">
-        <img src="images/lights.jpg" style="float:right;max-height:100%">
+    <div name="fun-facts" style="background-color:#000;padding:5%">
+        <h2 style="color:#89b;text-align:center">Fun Facts</h2>
+        <br><br>
+        <div class="fun-facts">
+            <div>
+                <p>I grew up right outside of Boston.</p>
+                <p>I now live in New York City.</p>
+                <p>I've been <a href="https://www.youtube.com/watch?v=FIsTy9N_Utg" target="_blank" style="color:#89b">dancing</a> since I was 3 years old. And still do.</p>
+                <p>And was one of American Dance Awards' top 100 Dancers of the Year in 2012.</p>
+                <p>I lit the <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=07%2F05%2F2015" target="_blank" style="color:#89b">Empire State Building</a> on July 5th, 2015.</p>
+                <p>And then again for my <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=05%2F16%2F2017" target="_blank" style="color:#89b">graduation from NYU</a>.</p>
+                <p>My favorite drink is milk, but I hate cheese (I know, I know).</p>
+                <p>I have the <a href="https://www.instagram.com/teddybearthecavachon/" target="_blank" style="color:#89b">cutest dog in the world</a>, named Teddy (unbiased opinion).</p>
+                <p>I love cooking but I'm not very good at it... yet.</p>
+            </div><div>
+                <!--div style="background-image:url(images/lights.jpg) right center;max-width:90%;max-height:100%"-->
+                <img src="images/lights.jpg" style="float:right;max-width:90%;max-height:100%">
+            </div>
+        </div>
+        
+    </div>
+
+    <!--div name="fun-facts" style="background-color:#000;height:650px">
+        <img src="images/lights.jpg" style="float:right;max-height:100%;max-width:40%">
         <div class="fun-facts" name="facts" style="text-align:left;margin-left:10%;padding-top:3%;padding-bottom:10%">
             <h3 style="color:#89b;text-align:center;padding-bottom:15px">Fun Facts</h3  >
             <p>I grew up right outside of Boston.</p>
@@ -202,15 +226,14 @@
             <p>I lit the <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=07%2F05%2F2015" target="_blank" style="color:#89b">Empire State Building</a> on July 5th, 2015.</p>
             <p>And then again for my <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=05%2F16%2F2017" target="_blank" style="color:#89b">graduation from NYU</a>.</p>
             <p>My favorite drink is milk, but I hate cheese (I know, I know).</p>
-            <p>I have the <a href="https://www.instagram.com/teddybearthecavachon/" target="_blank" style="color:#89b">cutest dog in the world</a> named Teddy (unbiased opinion).</p>
+            <p>I have the <a href="https://www.instagram.com/teddybearthecavachon/" target="_blank" style="color:#89b">cutest dog in the world</a>, named Teddy (unbiased opinion).</p>
             <p>I love cooking but I'm not very good at it... yet.</p>
         </div>
-        
-    </div>
+    </div-->
 
     <!-- CONTACT ME -->
     <div name="contact" style="text-align:center;background-color:#fff;padding-top:5%;padding-bottom:10%">
-        <p style="font-size:40px;font-weight:50">Contact Me</p>
+        <p style="font-size:1.4rem;font-weight:50">Contact Me</p>
         <div name="contact" style="height:40px">
             <a href="https://www.linkedin.com/in/whitneymulhern/">
                 <img class="contact-block" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/svvszaufolhr4jkwl7vz.jpg">
@@ -220,10 +243,6 @@
             </a>
         </div>
     </div>
-	
-
-
-
 
 
 </body>
