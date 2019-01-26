@@ -47,7 +47,9 @@ body {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-    background-attachment: scroll;
+    .header-background {
+        background-attachment: scroll;
+    }
 }
 
 .header-content {
