@@ -45,6 +45,11 @@ body {
     height:100vw;
     max-height: 100vh;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+    background-attachment: scroll;
+}
+
 .header-content {
     position: relative;
     width: 100%;
