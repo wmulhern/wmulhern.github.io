@@ -100,6 +100,9 @@ p {
     .resume{
         grid-template-columns: 1fr;
     }
+    .job-company, .job-location, .job-title{
+        text-align: center;
+    }
 }
 .job-image {
     width: 4rem;
@@ -180,12 +183,6 @@ a:hover { /* mouse over link */
     font-family:Lucida Console;
     font-size: .45rem;
 }
-@media screen and (max-width:500px) {
-    .skills{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 
 .fun-facts{
     display:grid;
@@ -195,6 +192,20 @@ a:hover { /* mouse over link */
     margin-right: auto;
     text-align: left;
 }
+@media screen and (max-width:500px) {
+    .skills{
+        grid-template-columns: 1fr 1fr;
+    }
+    .fact-img{
+        display:none;
+    }
+    .fun-facts{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 
 
 
@@ -224,7 +235,7 @@ hr.fancy {
 
 
 
-
+/*
 .float-margin-left, .float-margin-right{
     padding:1%;
     width:10%;
@@ -272,7 +283,7 @@ hr.fancy {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+*/
 
 
 
