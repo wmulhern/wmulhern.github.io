@@ -40,9 +40,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%; 
+    /*width: 100%;*/ 
     max-width: 100%;
-    height:100vh;
+    height:100vw;
+    max-height: 100vh;
 }
 .header-content {
     position: relative;
@@ -185,7 +186,7 @@ a:hover { /* mouse over link */
     font-family:Lucida Console;
     font-size: .45rem;
     grid-gap: 5% 15%;
-    padding: 5% 0;
+    padding: 2% 0 0 0;
 }
 .skill-stars{
     text-align: right;
