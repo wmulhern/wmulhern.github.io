@@ -10,22 +10,23 @@ body {
     box-sizing:border-box;
 }
 
-
+/*
 .stars {
     padding:1%;
     float:right;
-    /*width:10%; /* The width is 20%, by default */
+    /*width:10%; 
 }
 .leftcol {
     padding:1%;
     float:left;
-    width:10%; /* The width is 20%, by default */
+    width:10%; 
 }
 .rightcol {
     padding:1%;
     float:right;
-    width:10%; /* The width is 20%, by default */
+    width:10%; 
 }
+*/
 
 /* HEADER */
 
@@ -46,19 +47,20 @@ body {
 .header-content {
     position: relative;
     width: 100%;
-    height: inherit;
+    height: auto;
     padding: 1%;
     text-align: center;
     top: 35%;
 }
 
 .sub-header {
-    height:50%
+    /*min-height:50%
+    height: auto;*/
+    height:50%;
 }
 .sub-header h1 {
     font-size: 1.5rem;
 }
-
 
 .main-header h1 {
     font-size: 2rem;
@@ -96,7 +98,7 @@ p {
     margin-right: auto;
     font-family: Arial;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
     .resume{
         grid-template-columns: 1fr;
     }
@@ -175,13 +177,19 @@ a:hover { /* mouse over link */
 /* OTHER */
 .skills{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width:60%;
+    grid-template-columns: 1fr 1fr;
+    width:20rem;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     font-family:Lucida Console;
     font-size: .45rem;
+    grid-gap: 5% 15%;
+    padding: 5% 0;
+}
+.skill-stars{
+    text-align: right;
+    float:right;
 }
 
 .fun-facts{
@@ -192,9 +200,11 @@ a:hover { /* mouse over link */
     margin-right: auto;
     text-align: left;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
     .skills{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        width:10rem;
+        padding: 5% 0 10% 0;
     }
     .fact-img{
         display:none;
