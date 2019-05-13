@@ -1,0 +1,6 @@
+DirectoryIndex construction.html
+
+RewriteEngine On
+Options +FollowSymlinks
+RewriteCond %{REQUEST_URI} !construction\.html
+RewriteRule ^(.*)$ /construction.html [R=302,L]
