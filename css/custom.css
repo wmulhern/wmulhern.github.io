@@ -10,25 +10,8 @@ body {
     box-sizing:border-box;
 }
 
-/*
-.stars {
-    padding:1%;
-    float:right;
-    /*width:10%; 
-}
-.leftcol {
-    padding:1%;
-    float:left;
-    width:10%; 
-}
-.rightcol {
-    padding:1%;
-    float:right;
-    width:10%; 
-}
-*/
 
-/* HEADER */
+/* --------- HEADER --------- */
 
 .header-background {
     clear:both;
@@ -41,9 +24,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     /*width: 100%;*/ 
-    max-width: 100%;
-    height:100vw;
-    max-height: 100vh;
+    height:100vh;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
@@ -60,6 +41,16 @@ body {
     text-align: center;
     top: 35%;
 }
+.main-header .header-content {
+    width: 60%;
+    top: 25%;
+}
+
+@media screen and (max-width:800px) {
+    .main-header .header-content {
+        top: 15%;
+    }
+}
 
 .sub-header {
     /*min-height:50%
@@ -73,6 +64,7 @@ body {
 .main-header h1 {
     font-size: 2rem;
     font-weight: 300;
+    color: rgba(40,40,40);
 }
 
 .main-header p {
@@ -83,7 +75,7 @@ body {
 .main-header h2 {
     font-size: 1rem;
     font-weight: 400;
-    color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,0.5);
 }
 
 h1 {
@@ -92,12 +84,23 @@ h1 {
 h2 {
     font-size: .8rem;
 }
+h3 {
+    font-size: .7rem;
+}
 p {
     font-size: .5rem;
 }
 
 
-/* JOBS */
+.year{
+    font-family: "Martel";
+    color: rgba(70,90,105,.2);
+    font-size: 2rem;
+    position:absolute;
+    margin:0;
+}
+
+/* --------- JOBS --------- */
 .resume{
     display:grid;
     grid-template-columns: 1fr 4fr;
@@ -123,7 +126,7 @@ p {
     margin-bottom: 0px;
     font-size: 0.8rem;
     font-weight: 400;
-    color: #236;
+    color: black;/*#000877;/*#0059b3; #236;*/
     text-decoration: underline;
 }
 .job-location{
@@ -171,67 +174,126 @@ p {
     font-family: Arial;
 }
 
-
-/* LINKS */
-
-a:link { /* unvisited link */
-    color: #236;
-}
-a:hover { /* mouse over link */
-    color: #469;
+.resume .year{
+    right:5%;
 }
 
+.education .year{
+    right:5%;
+    margin-top:5%;
+}
 
-/* OTHER */
+
+/* --------- MORE ABOUT ME --------- */
 .skills{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    width:20rem;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-family:Lucida Console;
     font-size: .45rem;
-    grid-gap: 5% 15%;
     padding: 2% 0 0 0;
 }
-.skill-stars{
-    text-align: right;
-    float:right;
+
+.technologies{
+    font-family:Lucida Console;
+    text-align: left;
+    width:20rem;
+    margin: auto;
 }
 
-.fun-facts{
+.technologies .list {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding-bottom:5%;
+    padding-top:2%;
+    margin:auto;
+}
+
+.likes-dislikes{
+    width:20rem;
+    margin: auto;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    width:80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    grid-row-gap: 5%;
 }
+
+
+
+/* --------- RECOGNITION AND PUBLICATIONS --------- */
+.influenster{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 5%;
+    align-items: center;
+}
+
+.influenster2{
+    display:none;
+}
+.nsdi {
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+    grid-column-gap: 5%;
+    align-items: center;
+}
+
+.recognition p {
+    font-family:Arial
+}
+
+.recognition a:link { /* unvisited link */
+    color: #000;/*#236;*/
+}
+.recognition a:hover { /* mouse over link */
+    color: #236;
+}
+
+.recognition img{
+    max-width: 100%
+}
+
+.recognition .year{
+    left:5%;
+    font-size: 2.5rem;
+}
+
 @media screen and (max-width:800px) {
-    .skills{
+    .influenster2, .nsdi{
+        display:grid;
         grid-template-columns: 1fr;
-        width:10rem;
-        padding: 5% 0 10% 0;
+        align-items: center;
+        text-align: center;
     }
-    .fact-img{
+    .influenster{
         display:none;
     }
-    .fun-facts{
-        grid-template-columns: 1fr;
+    .recognition img{
+        max-width: 80%;
+        margin: auto;
+        padding:2%;
     }
 }
 
+/* --------- FUN FACTS --------- */
 
-
-
-
-
-.contact-block{
-    height:2.5rem;
-    margin:2%;
+.fun-facts{
+    background-color:#000;
+    overflow-y: hidden;
 }
 
+.fun-facts a{
+    color:#90b876;
+}
+
+.fact-img{
+    position:absolute;
+    width:50%;
+}
+
+.fact-txt{
+    padding:5%;
+    margin-left: 50%
+}
 
 .fun-facts p {
     padding-bottom:2%;
@@ -240,7 +302,56 @@ a:hover { /* mouse over link */
     color: #eee;
 }
 
+@media screen and (max-width:800px) {
+    .skills{
+        width:80%;
+    }
+    .fact-img{
+        display:none;
+    }
 
+    .fact-txt{
+        margin:0;
+    }
+    .technologies, .likes-dislikes{
+        width:100%;
+    }
+}
+
+/* --------- CONTACT ME --------- */
+
+.contact-div{
+    z-index: 1;
+    position: relative;
+    text-align:center;
+    background-color:#fff;
+    padding-top:5%;
+    padding-bottom:10%
+}
+
+/* --------- OTHER --------- */
+
+/* ICONS */
+.icon{
+    height:2.5rem;
+    width:2.5rem;
+    margin:2%;
+}
+
+.med-icon{
+    height:2rem;
+    width:2rem;
+}
+
+.small-icon{
+    height:1rem;
+    width:1rem;
+}
+
+
+
+
+/* HORIZONTAL LINE */
 hr.fancy {
     border: 0; 
     height: 1px; 
@@ -249,63 +360,6 @@ hr.fancy {
     background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
-
-
-
-
-/*
-.float-margin-left, .float-margin-right{
-    padding:1%;
-    width:10%;
-}
-
-.float-margin-left{
-    float:left;
-}
-
-.float-margin-right{
-    float:right;
-}
-
-.float-main{
-    width:80%;
-}
-
-@media screen and (max-width:800px) {
-    .float-margin-left, .float-margin-right{
-      display:none;
-    }
-    .float-main{
-      width:100%;
-    }
-}
-
-.outer-float{
-    float:left;
-    height: 100px;
-    background-color: red;
-    position: relative;
-}
-
-.inner-float{
-    float:left;
-    width: 50%;
-    height: 75px;
-    background-color: blue;
-}
-
-
-.vert-center{ /* parent must have position:relative; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
-
-
-
-
 
 
 

@@ -1,4 +1,10 @@
+<!--
+    TODOS:
+        - Download PDF resume
+-->
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
 <head>
 
     <meta charset="utf-8">
@@ -8,26 +14,282 @@
     <title>Whitney Mulhern</title>
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Martel' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <meta property="og:image" content="images/ireland.jpg" />
+    
 
     <!-- Bootstrap Core CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/construction.css" rel="stylesheet">
+    <!--link href="css/fluid.css" rel="stylesheet"-->
+	<link href="css/custom.css" rel="stylesheet">
+    <style class="cp-pen-styles">
+        @media screen and (min-width: 20rem) {
+          html {
+            font-size: calc(1.2rem + 1.2 * ((100vw - 20rem) / 30));
+          }
+        }
+        @media screen and (min-width: 50rem) {
+          html {
+            font-size: 2rem;
+          }
+      }
+    </style>
+    
+
 </head>
 
 <body>
-
+    <!-- Navigation -->
+    <!--div id="nav"></div>
+    <script> 
+        $(function(){
+          $("#nav").load("nav.html"); 
+        });
+    </script--> 
    
     <!-- HEADER -->
-    <div class="construction-wrapper">
-        <div class="construction-img">
-            <img src="images/robot.png" style="width:100%">
+    <div class="header-background main-header" style="background-position: center right;background-image:url(images/blue\ shirt.jpg)">
+        <div class="header-content">
+            <h2><i>Hello! I'm</i></h2>
+            <h1><strong>Whitney Mulhern</strong></h1>
+            <!--p>Welcome to my interactive resume</p-->
         </div>
-        <div class="construction-text" style="padding: 10% 0%">
-            <h1>My interactive resume is currently under construction</h1>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div style="overflow:auto;text-align:center;background-color:#f4f7ff;padding:3% 0px">
+        <div class="resume">
+            
+            <div class="job-img">
+                <img class="job-image" alt="IBM" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2000px-IBM_logo.svg.png">
+            </div>
+            <div class="job-text">
+                <h1 class="year">2018-2019</h1>
+                <p class="job-company">IBM</p>
+                <p class="job-location">New York, NY</p>
+                <p class="job-title">Software Engineer</p> 
+                    <p class="job-description">• Develop new features of an internal onboarding tool with small team using ReactJS</p>
+				    <p class="job-description">• Debug 20,000 LOC codebase of internal onboarding tool</p> 
+            </div>
+            <div class="job-img">
+                <img class="job-image" alt="IBM" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2000px-IBM_logo.svg.png">
+            </div>
+            <div class="job-text">
+                <h1 class="year">2017-2018</h1>
+                <p class="job-company">IBM</p>
+                <p class="job-location">New York, NY</p>
+                <p class="job-title">Security Engineer</p> 
+                    <p class="job-description">• Minimized Cloud Platform vulnerabilities by reviewing 50+ teams' code and offering creative solutions</p>
+                    <p class="job-description">• Corrected 100s of database errors per day with a JavaScript agent (~100 lines of code)</p>
+                    <p class="job-description">• Drove and ensured GDPR compliance ahead of schedule from 100+ IBM development teams</p>
+                    <p class="job-description">• Improved security awareness in my organization by curating a training course of security best practices</p>
+            </div>
+            <div class="job-img">
+                
+                <img class="job-image" alt="LGS" src="https://njbmagazine.com/wp-content/uploads/2017/10/LGS.gif">
+            </div>
+            <div class="job-text"> 
+                <h1 class="year">2016</h1>
+                <p class="job-company">LGS Innovations</p>
+                <p class="job-location">Florham Park, NJ</p>
+                <p class="job-title">Cyber Security Research Intern</p>
+                    <p class="job-description">• Designed an Intrusion Detection tool for a commercial IOT device using machine learning, R, & python</p>
+                    <p class="job-description">• Debugged and improved usability of a 10,000+ line codebase</p>
+            </div>
+            
+            <div class="job-img">
+                
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <h1 class="year">2015</h1>
+                <p class="job-company">NYU Courant Institue of Mathematical Sciences</p>
+                <p class="job-location">New York, NY</p>
+                <p class="job-title">Research Assistant</p>
+                    <p class="job-description">• Proved compatibility by developing a secure JavaScript client which interacted with a C++ back end</p>
+                    <p class="job-description">• Co-wrote the research paper published in Networked Systems Design and Implementation 2016</p>
+            </div>
+            <div class="job-img">
+                
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <h1 class="year">2014</h1>
+                <p class="job-company">Philips Color Kinetics</p>
+                <p class="job-location">Burlington, MA</p>
+                <p class="job-title">Applications Engineering Intern / Applications Engineer</p>
+                    <p class="job-description">• Designed, programmed, and tested a failsafe system for the Empire State Building light system</p>
+                    <p class="job-description">• Designed and implemented a database-backed web application with a team</p>
+                    <p class="job-description">• Maintained and managed remote monitoring systems, web forms, and web applications</p>
+            </div>
+        </div>
+        <hr class="fancy">
+        <div class="education">
+            <h1 class="year">2017</h1>
+            <div class="job-img">
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <p class="degree">B.S. Computer Science</p>
+                <p class="job-description">New York University</p>
+            </div>
+            <div class="job-img">
+                <img class="job-image" alt="NYU" src="http://www.freelogovectors.net/wp-content/uploads/2018/04/nyu_logo_new_york_university1.png">
+            </div>
+            <div class="job-text">
+                <p class="degree">B.S. Computer Engineering</p>
+                <p class="job-description">New York University</p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- MORE ABOUT ME HEADER -->
+    <div class="header-background sub-header" style="background-image:url(images/Newport.jpg)">
+        <div class="header-content">
+            <!--h1>Projects and Skills</h1-->
+            <h1>More About Me</h1>
+        </div>  
+    </div>
+
+    <!-- SKILLS -->
+    <div name="skills" style="text-align:center;background-color:#c9cddb;color:black;padding-top:5%;padding-bottom:5%">
+        <div class="skills">
+            </div><div class="likes-dislikes">
+                <div name="love">
+                    <img class="small-icon" src="images/icons/heart2.svg"><h3>I love...</h3>
+                    <p>• Challenging problems</p>
+                    <p>• Fast-paced environments</p>
+                    <p>• Friendly functionality</p>
+                </div>
+                <div name="strive">
+                    <img class="small-icon" src="images/icons/lightning.svg"><h3>I strive to...</h3>
+                    <p>• Continuously learn</p>
+                    <p>• Write clean, efficient code</p>
+                    <p>• Teach and learn from coworkers</p>
+                </div>
+                <div name="dislike">
+                    <img class="small-icon" src="images/icons/dislike.svg"><h3>I dislike...</h3>
+                    <p>• Short-sighted solves</p>
+                    <p>• Extraneous meetings</p>
+                </div>
+                <div name="intrigued">
+                    <img class="small-icon" src="images/icons/lightbulb.svg" style="transform:rotate(180deg);"><h3>I'm intrigued by...</h3>
+                    <p>• Security problems</p>
+                    <p>• Low-level functionality</p>
+                    <p>• The rise of the Pet Rock</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div name="skills" style="text-align:center;background-color:#f4f7ff;">
+        <div class="skills" style="padding-top:5%;padding-bottom:5%">
+            <div class="technologies">
+                <h3>>_ Things I'm good at</h3>
+                <div class="list">
+                    <img class="med-icon" src="images/icons/c.png">
+                    <img class="med-icon" src="images/icons/c++.png">
+                    <img class="med-icon" src="images/icons/python.png">
+                    <img class="med-icon" src="images/icons/javascript.png">
+                </div>
+                <h3>>_ Things I'm familiar with</h3>
+                <div class="list">
+                    <img class="med-icon" src="images/icons/java.png">
+                    <img class="med-icon" src="images/icons/SQL.png">
+                    <img class="med-icon" src="images/icons/reactjs.png">
+                    <img class="med-icon" src="images/icons/linux.svg">
+                </div>
+                <h3>>_ Things I've briefly worked with</h3>
+                <div class="list" style="grid-template-columns: 1fr 1fr 1fr;">
+                    <img class="med-icon" src="images/icons/ruby.png">
+                    <img class="med-icon" src="images/icons/php2.png">
+                    <img class="med-icon" src="images/icons/assembly.png">
+                </div>
+            </div>
+        </div>   
+    </div>
+
+
+    <!-- AWARDS AND PUBLICATIONS HEADER -->
+    <div class="header-background sub-header" style="background-image:url(images/nyc-me.jpg)">
+        <div class="header-content">
+            <h1>Recognition and Publications</h1>
+        </div>
+    </div>
+
+    <!-- AWARDS AND PUBLICATIONS -->
+    <div class="recognition" name="awards" style="text-align:left;background-color:#f4f7ff;padding: 5% 0%;">
+        <div style="width:70%;margin-left:auto;margin-right:auto;">
+            <h1 class="year">2015</h1>
             <br>
-            <p>Please check back soon...</p>
+            <a target="_blank" href="https://www.influenster.com/article/codelikeagirl-scholarship-winner-whitney-mulhern">
+                <h2 style="text-align:center;margin:5%;">#CodeLikeAGirl Scholarship Winner 2015</h2>
+            </a>
+            <div class="influenster">
+                <p>Say hello, to one of the amazing winners of our #CodeLikeAGirl Scholarship! Whitney is in her fourth year of a 5-year program studying Computer Science and Computer Engineering at NYU. Outside of school, she is an active member of NYU's chapter of the Association for Computing Machinery but also loves to dance and perform in musicals. This engineering and computer science superstar isn't taking things as they're given, but rather has her eyes set on improving the way everyone interacts with technology! <a target="_blank" href="https://www.influenster.com/article/codelikeagirl-scholarship-winner-whitney-mulhern">Read more...</a></p>
+                <img src="images/influenster.jpg">
+            </div>
+            <div class="influenster2">
+                <img src="images/influenster.jpg">
+                <p>Say hello, to one of the amazing winners of our #CodeLikeAGirl Scholarship! Whitney is in her fourth year of a 5-year program studying Computer Science and Computer Engineering at NYU. Outside of school, she is an active member of NYU's chapter of the Association for Computing Machinery but also loves to dance and perform in musicals. This engineering and computer science superstar isn't taking things as they're given, but rather has her eyes set on improving the way everyone interacts with technology! <a target="_blank" href="https://www.influenster.com/article/codelikeagirl-scholarship-winner-whitney-mulhern">Read more...</a></p>
+            </div>
+            <h1 class="year">2016</h1>
+            <a target="_blank" href="https://eprint.iacr.org/2015/489.pdf">
+                <h2 style="text-align:center;margin:5%">Publication: NSDI'16 Conference</h2>
+            </a>
+            <div class="nsdi">
+                <img src="https://www.usenix.org/sites/default/files/nsdi16_button_180.png">
+                <div>
+                    <p class='job-title' style="text-align:center">Scalable and private media consumption with Popcorn</p>
+                    <p style="text-align:center">T. Gupta N. Crooks <strong>W. Mulhern</strong> S. Setty L. Alvisi M. Walfish
+                    <p>Abstract. <i>We describe the design, implementation, and evaluation of Popcorn, a media delivery system that hides clients’ consumption (even from the content distributor). Popcorn relies on a powerful cryptographic primitive: private information retrieval (PIR). With novel refinements that leverage the properties of PIR protocols and media streaming, Popcorn scales to the size of Netflix’s library (8000 movies) and respects current controls on media dissemination. The dollar cost to serve a media object in Popcorn is 3.87× that of a non-private system.</i> <a target="_blank" href="https://eprint.iacr.org/2015/489.pdf">Read more...</a></p>
+                </div>
+            </div>
         </div>
+    </div>
+
+
+
+    <!-- FUN FACTS -->
+    <div name="fun-facts">
+        <div class="fun-facts">
+            <div class="fact-img">
+                <div class="img-wrapper">
+                    <img src="images/green-shirt-smirk.jpg" style="max-width:100%;">
+                </div>
+            </div>
+            <div class="fact-txt">
+                <h2 style="color:#90b876;text-align:center">Fun Facts</h2>
+                <br><br>
+                <p>I grew up right outside of Boston.</p>
+                <p>I now live in New York City.</p>
+                <p>I've been <a href="https://www.youtube.com/watch?v=FIsTy9N_Utg" target="_blank">dancing</a> since I was 3 years old. And still do.</p>
+                <p>And was one of American Dance Awards' top 100 Dancers of the Year in 2012.</p>
+                <p>I lit the <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=07%2F05%2F2015" target="_blank">Empire State Building</a> on July 5th, 2015.</p>
+                <p>And then again for my <a href="http://www.esbnyc.com/explore-esb/tower-lights/date?field_tower_end_on_value%5Bvalue%5D%5Bdate%5D=05%2F16%2F2017" target="_blank">graduation from NYU</a>.</p>
+                <p>My favorite drink is milk, but I hate cheese (I know, I know).</p>
+                <p>I have the <a href="https://www.instagram.com/teddybearthecavachon/" target="_blank">cutest dog in the world</a>, named Teddy (unbiased opinion).</p>
+                <p>I love cooking but I'm not very good at it... yet.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- CONTACT ME -->
+    <div name="contact" class="contact-div">
+        <p style="font-size:1.4rem;font-weight:50">Contact Me</p>
+        <div name="contact" style="height:40px">
+            <a href="https://www.linkedin.com/in/whitneymulhern/">
+                <img class="icon" src="images/icons/linkedin.png">
+            </a>
+            <a href="https://github.com/wmulhern">
+                <img class="icon" src="images/icons/github.svg">
+            <a href="mailto:whitney.a.mulhern@gmail.com">
+				<img class="icon" src="images/icons/email.png">
+        	</a>
+		</div>
     </div>
 
 
