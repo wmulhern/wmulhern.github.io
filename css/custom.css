@@ -47,6 +47,10 @@ body {
     top: 25%;
 }
 
+.mobile-header-greeting{
+    display:none;
+}
+
 
 
 .sub-header {
@@ -80,9 +84,13 @@ body {
 
 @media all and (orientation:portrait){
     .main-header .header-content {
-        width:auto;
-        right:0;
-        bottom:0;
+        display:none;
+    }
+    .mobile-header-greeting{
+        display:block;
+    }
+    .main-header-background{
+        background-attachment: unset;
     }
 }
 
