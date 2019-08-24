@@ -223,11 +223,14 @@ p {
 /* --------- MORE ABOUT ME --------- */
 
 .technologies{
-    font-family:Lucida Console;
     text-align: left;
     width:20rem;
     margin: auto;
     padding:0 5%;
+}
+
+.tech-header{
+    font-family:Lucida Console;
 }
 
 .technologies .list {
@@ -255,6 +258,9 @@ p {
     .likes-dislikes{
         grid-template-columns: 1fr;
         margin-bottom:20%;
+    }
+    .technologies, .likes-dislikes{
+        width:100%;
     }
 }
 
@@ -354,9 +360,7 @@ p {
     .fact-txt{
         margin:0;
     }
-    .technologies, .likes-dislikes{
-        width:100%;
-    }
+    
 }
 
 /* --------- CONTACT ME --------- */
