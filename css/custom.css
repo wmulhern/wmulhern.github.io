@@ -230,7 +230,7 @@ p {
 }
 
 .tech-header{
-    font-family:Lucida Console;
+    font-family:Lucida Console, Courier, monospace;
 }
 
 .technologies .list {
