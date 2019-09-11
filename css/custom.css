@@ -206,7 +206,7 @@ p {
         text-align: center;
     }
     .year{
-        display: none;
+        display: none;http://localhost:8080/wmulhern.github.io/index.html
     }
     .year-mobile{
         right:0%;
@@ -328,21 +328,26 @@ p {
 
 .fun-facts{
     background-color:#000;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
+    display: flex;
+}
+
+.fact-col{
+    width:50%;
 }
 
 .fun-facts a{
     color:#90b876;
 }
 
-.fact-img{
-    position:absolute;
+/*.fact-img{
+    /*position:absolute;
     width:50%;
-}
+}*/
 
 .fact-txt{
     padding:5%;
-    margin-left: 50%
+    /*margin-left: 50%*/
 }
 
 .fun-facts p {
@@ -350,6 +355,7 @@ p {
     /*font-size: 16px;*/
     font-weight: 300;
     color: #eee;
+    max-height: 100%;
 }
 
 @media screen and (max-width:800px) {
@@ -366,8 +372,8 @@ p {
 /* --------- CONTACT ME --------- */
 
 .contact-div{
-    z-index: 1;
-    position: relative;
+    /*z-index: 1;*/
+    /*position: relative;*/
     text-align:center;
     background-color:#fff;
     padding-top:5%;
