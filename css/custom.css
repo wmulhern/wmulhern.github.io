@@ -105,13 +105,13 @@ h1 {
     font-size: 1rem;
 }
 h2 {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 h3 {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 p {
-    font-size: .5rem;
+    font-size: .6rem;
 }
 
 
@@ -327,32 +327,29 @@ p {
 /* --------- FUN FACTS --------- */
 
 .fun-facts{
-    background-color:#000;
-    /*overflow-y: hidden;*/
+    background-color: #000;
     display: flex;
 }
 
 .fact-col{
-    width:50%;
+    width: 50%;
 }
 
 .fun-facts a{
-    color:#90b876;
+    color: #90b876;
 }
 
-/*.fact-img{
-    /*position:absolute;
-    width:50%;
-}*/
+.fact-img{
+    margin: auto;
+}
 
 .fact-txt{
-    padding:5%;
-    /*margin-left: 50%*/
+    padding: 5%;
 }
 
 .fun-facts p {
-    padding-bottom:2%;
-    /*font-size: 16px;*/
+    padding-bottom: 2%;
+    font-size: .6rem;
     font-weight: 300;
     color: #eee;
     max-height: 100%;
@@ -365,6 +362,9 @@ p {
 
     .fact-txt{
         margin:0;
+    }
+    .fact-col{
+        width: 100%;
     }
     
 }
