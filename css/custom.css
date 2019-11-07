@@ -67,7 +67,7 @@ body {
     font-weight: 300;
     color: rgba(40,40,40);
     color: rgba(0,0,0,0.8);
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 8px rgba(255,255,255,255.8);
 }
 
 .main-header p {
