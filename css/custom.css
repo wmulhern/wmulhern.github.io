@@ -192,6 +192,7 @@ p {
     text-align: left;
     display: inline-grid;
     padding:5%;
+    position: relative;
 }
 .job-img {
     margin:auto;
